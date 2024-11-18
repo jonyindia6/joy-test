@@ -16,7 +16,7 @@ $num = $_POST['password'];
          $retval = mail ($to,$subject,$message,$header);
          
          if( $retval == true ) {
-            echo "<script>window.location.href='index.html'</script>";
+            echo "<script>alert('Success...')</script>";
          }else {
             echo "<script>alert('Message could not be sent...')</script>";
          }
